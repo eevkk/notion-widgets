@@ -23,7 +23,7 @@ body {
 
 .slider {
   position: relative;
-  width: 800px;
+  width: 100%;
   height: auto;
   aspect-ratio: 2 / 1;
   overflow: hidden;
@@ -59,16 +59,21 @@ body {
     center top/cover;
 }
 
-
+.buttons {
+  position: fixed;
+  width: 100%;
+  top: calc(50% - 27px);
+}
+  
 .buttons button#prev {
   position: absolute;
-  top: 50%;
+  /* top: 50vh; */
   left: 1rem;
 }
 
 .buttons button#next {
   position: absolute;
-  top: 50%;
+  /* top: 50vh; */
   right: 1rem;
 }
 
